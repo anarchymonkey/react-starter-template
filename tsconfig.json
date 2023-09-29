@@ -1,0 +1,24 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "es2015",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "useDefineForClassFields": true,
+    "lib": ["dom", "es5", "es6"],
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "outDir": "./build"
+  },
+  "include": ["./src/**/*"]
+}
